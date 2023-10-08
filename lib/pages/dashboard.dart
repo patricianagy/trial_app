@@ -34,11 +34,8 @@ class _DashboardPageState extends State<DashboardPage> {
         actions: [
           Padding(
             padding: const EdgeInsets.all(15),
-            child: SvgPicture.asset(
-              'assets/images/menu.svg',
-              height: 10,
-              width: 15,
-            ),
+            child: SvgPicture.asset('assets/images/menu.svg',
+                height: 10, width: 15, fit: BoxFit.scaleDown),
           )
         ],
       ),
@@ -89,11 +86,10 @@ class _DashboardPageState extends State<DashboardPage> {
                                     BorderRadius.all(Radius.circular(10))),
                             child: Row(
                               children: [
-                                SvgPicture.asset(
-                                  'assets/images/timer.svg',
-                                  height: 10,
-                                  width: 9,
-                                ),
+                                SvgPicture.asset('assets/images/timer.svg',
+                                    height: 10,
+                                    width: 9,
+                                    fit: BoxFit.scaleDown),
                                 const SizedBox(width: 4),
                                 Text('3 perc',
                                     style: GoogleFonts.poppins(
