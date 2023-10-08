@@ -13,7 +13,8 @@ class DashboardPage extends StatefulWidget {
 class _DashboardPageState extends State<DashboardPage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SafeArea(
+        child: Scaffold(
       appBar: AppBar(
         toolbarHeight: 70,
         backgroundColor: Colors.white,
@@ -115,6 +116,6 @@ class _DashboardPageState extends State<DashboardPage> {
               )),
         ],
       ),
-    );
+    ));
   }
 }
