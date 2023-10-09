@@ -2,14 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class ArticlePage extends StatefulWidget {
-  const ArticlePage({super.key});
+class ArticleDetailsPage extends StatefulWidget {
+  final int id;
+
+  const ArticleDetailsPage({required this.id, super.key});
 
   @override
-  State<ArticlePage> createState() => _ArticlePageState();
+  State<ArticleDetailsPage> createState() => _ArticleDetailsPageState();
 }
 
-class _ArticlePageState extends State<ArticlePage> {
+class _ArticleDetailsPageState extends State<ArticleDetailsPage> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -26,7 +28,8 @@ class _ArticlePageState extends State<ArticlePage> {
                           width: MediaQuery.of(context).size.width,
                           decoration: const BoxDecoration(
                               image: DecorationImage(
-                                image: AssetImage("assets/images/platypus.jpg"),
+                                image:
+                                    AssetImage("assets/images/placeholder.png"),
                                 fit: BoxFit.cover,
                               ),
                               borderRadius:

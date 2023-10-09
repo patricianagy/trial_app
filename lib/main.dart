@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:trial_app/pages/dashboard.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:trial_app/pages/dashboard/dashboard.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ProviderScope(child: const MyApp()));
 }
 
 class MyApp extends StatelessWidget {
