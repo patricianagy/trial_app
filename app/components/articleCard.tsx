@@ -33,7 +33,9 @@ const ArticleCard: React.FC<ArticleProps> = ({
           </div>
         </div>
 
-        <div className="text-lg font-bold mt-4">{title}</div>
+        <div className="md:w-[400px] w-[300px] text-lg font-bold mt-4 break-words">
+          {title}
+        </div>
       </Link>
     </div>
   );
